@@ -39,4 +39,9 @@ RUN pip3 install -r requirements.txt
 # copy the content of the local src directory to the working directory
 COPY src/ .
 # command to run on container start
+CMD [ "source", ".env_sample" ]
+
+ENV TUSHARE_API_TOKEN='XXX'
+ENV USER_LIST='x@x.com'
+
 CMD [ "python", "./main.py" ]
