@@ -29,6 +29,7 @@ jobs:
         tags: latest
         registry: home.cotory.com:4888
         dockerfile: ./core/Dockerfile
+        directory: ./core
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
