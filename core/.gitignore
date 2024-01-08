@@ -22,3 +22,5 @@ var/
 
 # ignore database migration config file for db connection info
 liquibase.properties
+
+log/
