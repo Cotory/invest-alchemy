@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # 或者你使用的默认分支名
+      - master  # 或者你使用的默认分支名
 
 jobs:
   build_and_push:
