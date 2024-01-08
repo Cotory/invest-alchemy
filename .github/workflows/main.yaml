@@ -25,9 +25,9 @@ jobs:
     - name: Build and Push
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: cotory/invest
+        image: invest
         tags: latest
-        registry: home.cotory.com:4888
+        registry: home.cotory.com:4888/cotory
         dockerfile: ./core/Dockerfile
         directory: ./core
         username: ${{ secrets.DOCKERHUB_USERNAME }}
