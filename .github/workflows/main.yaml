@@ -24,7 +24,7 @@ jobs:
     - name: Build and Push
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./core
         file: ./Dockerfile
         push: true
         tags: cotory/invest:latest
